@@ -1,4 +1,4 @@
-HTTP/1.1 Bad Request
+HTTP/1.1 200 OK
 <%@ page language="java" contentType="text/html; charset=US-ASCII"
     pageEncoding="US-ASCII"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
@@ -11,5 +11,6 @@ HTTP/1.1 Bad Request
 Test JSP Page inside WEB-INF folder.<br>
 Init Param "test" value =<%=config.getInitParameter("test") %><br>
 HashCode of this object=<%=this.hashCode() %>
+<% res.setStatus(400); %>
 </body>
 </html>
